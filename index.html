@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+
+        <!-- swipper css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <!-- box icons sa navbar para sa darkmode-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/style.css">   
+</head>
+
+<body>
+	<header class="header">
+		<a href="#" class="logo">Portfolio.</a>
+
+    <nav class="navbar">
+		<a href="#home" class="active">Home</a>
+		<a href="#about">About</a>
+		<a href="#services">Services</a>
+		<a href="#portfolio">Portfolio</a>
+		<a href="#contact">Contact</a>
+    </nav>
+
+       <div class="bx bx-moon" id="darkMode-icon"></div>
+
+       <div class="bx bx-menu" id="menu-icon"></div>
+       
+    </header>
+
+ <!-- header design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3><span>Hello</span>, I am</h3>
+            <h1>Caya <span>Yael</span> Sumbilla</h1>
+            <p>I'm currently a third-year student at St. Clare College in Caloocan, where I'm pursuing a bachelor's degree in computer science.</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100005372206516&mibextid=ZbWKwL"><i class= 'bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/xxOkihciMxx_02"><i class= 'bx bxl-twitter'></i></a>
+                <a href="https://instagram.com/its_yael_kadash?igshid=YTQwZjQ0NmI0OA=="><i class= 'bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/caya-yael-sumbilla-06126228a/"><i class= 'bx bxl-linkedin'></i></a>
+            </div>
+            <a href="images/My Resume.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class="bx bx-camera"></i>
+                    <h3>Photographer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class="bx bx-palette"></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class="bx bx-video-recording"></i>
+                    <h3>Videographer</h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="home-img">
+            <img src="images/home.png" alt=""> 
+      </div>    
+</section>
+
+<!--about section design -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.png" alt="">
+    </div>
+
+    <div class="about-col-2">
+        <h1 class="sub-title">About <span>Me</span></h1>
+        <h3>Hi, I'm Here To Help Your Next Project!</h3>
+        <p>I'm a Bachelor of Science in Computer Science college student with a passion for web design, frontend development, 
+            and UX/UI designing. While I may not have a lot of experience, I'm interested in applying to your company to 
+            contribute my knowledge skills. I'm eager to learn and work hard to help your company succeed.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>UI/UX Design Training at Et Institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at Oracle.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2026</span><br>Bachelor of Science in Computer Science
+                            St Clare College of Caloocan</li>
+                        <li><span>2019 - 2022</span><br>Humanities and Social Sciences
+                            Cielito Zamora Senior High School</li>
+                        <li><span>2015 - 2019</span><br>Cielito Zamora Junior High School</li>
+                        <li><span>2005 - 2015</span><br>Cielito Memorial Elementary School</li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+    </section>
+
+<!-- services section design -->
+<section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-alt' ></i>
+            <h3>Web Development</h3>
+            <p>We create products, brands & websites for tech companies in London, New York, SF & around the world.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bxs-paint' ></i>
+            <h3>Graphic Design</h3>
+            <p>We create products, brands & websites for tech companies in London, New York, SF & around the world.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-bar-chart-alt' ></i>
+            <h3>Digital Marketing</h3>
+            <p>We create products, brands & websites for tech companies in London, New York, SF & around the world.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+ </section>
+
+ <!--portfolio section design-->
+ <section class="portfolio" id="portfolio">
+    <h2 class="heading">My <span>Certicates</span> and <span>Portfolio</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="images/portfolio1.png" alt="">
+
+            <div class="portfolio-layer">
+                <h4>Certificate 1</h4>
+                <p>BLENDED 3D INTRODUCTION: Creating Basic 3D.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio2.png" alt="">
+            
+            <div class="portfolio-layer">
+                <h4>Certificate 2</h4>
+                <p>My Academic Excellence Award Way Back 2021 When I Was A Senior High Graduate.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio3.png" alt="">
+            
+            <div class="portfolio-layer">
+                <h4>Portfolio 1</h4>
+                <p>My First Rescued Cat Minching.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio4.png" alt="">
+            
+            <div class="portfolio-layer">
+                <h4>Portfolio 2</h4>
+                <p>Example Of My Artwork/Painting.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio5.png" alt="">
+            
+            <div class="portfolio-layer">
+                <h4>Portfolio 3</h4>
+                <p>My First Time Attending Youth Camp At Dinggalan Aurora Province.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio6.png" alt="">
+            
+            <div class="portfolio-layer">
+                <h4>Portfolio 4</h4>
+                <p>Our Family Vacation At Bolinao Pangasinan Way Back 2021.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+ </section> 
+
+ <!--testimonial design-->
+<div class="testimonial-container">
+    <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+    <div class="testimonial-wrapper">
+        <div class="testimonial-box mySwiper">
+            <div class="testimonial-content swiper-wrapper">
+                <div class="testimonial-slide swiper-slide">
+                    <img src="images/testimonial1.jpg" alt="">
+                    <h3>Lao Tzu</h3>
+                    <p>Life is a series of natural and spontaneous changes. Don't resist them that only creates sorrow. 
+                        Let reality be reality. Let things flow naturally forward in whatever way they like.</p>
+                </div>
+
+                <div class="testimonial-slide swiper-slide">
+                    <img src="images/testimonial2.jpg" alt="">
+                    <h3>Plato</h3>
+                    <p>"Excellence is not a gift, but a skill that takes practice. We do not act 'rightly' because 
+                    we are 'excellent' in fact we achieve 'excellence' by acting 'rightly.'"</p>
+                </div>
+
+                <div class="testimonial-slide swiper-slide">
+                    <img src="images/testimonial3.jpg" alt="">
+                    <h3>Maya Angelou</h3>
+                    <p>"My mission in life is not merely to survive but to thrive and to do so with some passion, some compassion, 
+                    some humor, and some style."</p>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+
+<!--contact section design-->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+        </div>
+
+        <div class="input-box">
+            <form name="submit-to-google-sheet">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!-- footer design--> 
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Caya Yael | All Rights Reserved</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home"> <i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+<!-----scroll reveal----->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!----- swipper js----->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-----tablinks of about----->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+      for(tablink of tablinks){
+       tablink.classList.remove("active-link");
+      } 
+      for(tabcontent of tabcontents){
+       tabcontent.classList.remove("active-tab");
+      } 
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+      <script src="js/script.js"></script>
+
+</body>
+        
+ </html>
