@@ -20,6 +20,12 @@ sections.forEach(sec =>{
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
 
+    /*============ sticky navbar ============*/
+    let header = document.querySelector('.header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+
     if(top >= offset && top < offset + height) {
        navLinks.forEach(links => {
           links.classList.remove('active');
@@ -29,15 +35,9 @@ sections.forEach(sec =>{
 });
 
 
-/*============ sticky navbar ============*/
-let header = document.querySelector('.header');
-
-header.classList.toggle('sticky', window.scrollY > 100);
-
 /*============ remove menu icon navbar when click navbar link (scroll) ============*/
-menuIcon.classList.remove(bx-x);
-navbar.classList.remove('active');	
-
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('active');
 
 };  
  
